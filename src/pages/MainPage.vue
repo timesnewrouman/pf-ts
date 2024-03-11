@@ -1,10 +1,9 @@
 <template>
-	<div id="app">
-		<router-view/>
-	</div>
+	<TableForGM/>
 </template>
 
 <script setup lang="ts">
+import TableForGM from '@/components/TableForGM.vue';
 
 </script>
 
