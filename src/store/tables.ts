@@ -1,17 +1,18 @@
 import {defineStore} from 'pinia';
 import axios from "axios";
 import {ref} from "vue";
+import InitialTable from "@components/interface/InitialTable";
 
 export const useTablesStore = defineStore('tables', () => {
-  const acTable = ref([]);
-  const savingThrowsTable = ref([]);
-  const perceptionTable = ref([]);
-  const hpTable = ref([]);
-  const attackTable = ref([]);
-  const damageTable = ref([]);
-  const spellDcTable = ref([]);
-  const spellAttackTable = ref([]);
-  const aoeTable = ref([]);
+  const acTable = ref<InitialTable | []>([]);
+  const savingThrowsTable = ref<InitialTable | []>([]);
+  const perceptionTable = ref<InitialTable | []>([]);
+  const hpTable = ref<InitialTable | []>([]);
+  const attackTable = ref<InitialTable | []>([]);
+  const damageTable = ref<InitialTable | []>([]);
+  const spellDcTable = ref<InitialTable | []>([]);
+  const spellAttackTable = ref<InitialTable | []>([]);
+  const aoeTable = ref<InitialTable | []>([]);
 
   function getAcTable(): Promise<void> {
     return axios.get(`https://65d7132527d9a3bc1d7a1610.mockapi.io/getTables`)

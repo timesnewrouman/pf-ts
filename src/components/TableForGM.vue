@@ -14,29 +14,29 @@
 	>
 		<template #bottom></template>
 		<template #item.extreme="{ value }">
-			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#6cd8ff' : '0'}; background`">{{
-					value ? value : ''
-				}}</span>
+			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#6cd8ff' : '0'}; background`">
+				{{ value ? value : '' }}
+			</span>
 		</template>
 		<template #item.high="{ value }">
-			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#3cff00' : '0'}; background`">{{
-					value ? value : ''
-				}}</span>
+			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#3cff00' : '0'}; background`">
+				{{ value ? value : '' }}
+			</span>
 		</template>
 		<template #item.moderate="{ value }">
-			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ffff54' : '0'}; background`">{{
-					value ? value : ''
-				}}</span>
+			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ffff54' : '0'}; background`">
+				{{ value ? value : '' }}
+			</span>
 		</template>
 		<template #item.low="{ value }">
-			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ff8000' : '0'}; background`">{{
-					value ? value : ''
-				}}</span>
+			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ff8000' : '0'}; background`">
+				{{ value ? value : '' }}
+			</span>
 		</template>
 		<template #item.terrible="{ value }">
-			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ff0000' : '0'}; background`">{{
-					value ? value : ''
-				}}</span>
+			<span :style="`padding: ${value ? '5px 10px' : '0'}; background: ${value ? '#ff0000' : '0'}; background`">
+				{{ value ? value : '' }}
+			</span>
 		</template>
 	</v-data-table>
 	<!--	<div>-->
@@ -59,12 +59,14 @@
 </template>
 
 <script setup lang="ts">
-import {useTablesStore} from '@/store/tables.ts';
 import {computed, ref} from "vue";
+import {useTablesStore} from '@/store/tables.ts';
+import Header from "@components/interface/TableForGM";
+import InitialTable from "@components/interface/InitialTable";
 
-const levels = ref([-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24])
+const levels = ref([-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]);
 
-const headers = ref([
+const headers = ref<Header[]>([
 	{title: 'type', key: 'type', sortable: false},
 	{title: 'extreme', key: 'extreme', sortable: false},
 	{title: 'high', key: 'high', sortable: false},
@@ -76,8 +78,9 @@ const headers = ref([
 const tablesStore = useTablesStore();
 
 const currentLevel = ref(1);
+
 const tableData = computed(() => {
-	const tables = [
+	const tables: (InitialTable)[] = [
 		tablesStore.acTable,
 		tablesStore.savingThrowsTable,
 		tablesStore.perceptionTable,
