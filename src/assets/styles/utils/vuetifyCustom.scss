@@ -1,0 +1,13 @@
+//@use 'vuetify/settings' with (
+//  $button-height: 60px ,
+//);
+
+.primary-btn {
+  color: white;
+  background: #0F4C81;
+  border-radius: 3px;
+
+  &:hover {
+    background: #F26B5B;
+  }
+}

@@ -1,8 +1,13 @@
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'MainPage',
+  //   component: () => import("@/pages/MainPage.vue"),
+  // },
   {
     path: '/',
-    name: 'MainPage',
-    component: () => import("@/pages/MainPage.vue"),
+    name: 'VuetifyTest',
+    component: () => import("@/pages/VuetifyTest.vue"),
   },
 ]
 
