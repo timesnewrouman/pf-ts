@@ -11,6 +11,8 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.vue', '.json', '.sass'],
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@assets': path.resolve(__dirname, './src/assets'),
+      '@components': path.resolve(__dirname, './src/components'),
     },
   },
   plugins: [
