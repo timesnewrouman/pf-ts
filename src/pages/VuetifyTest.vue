@@ -12,7 +12,7 @@
 <script setup>
 
 
-import TestDialog from "@components/TestDialog.vue";
+import TestDialog from "@/components/TestDialog.vue";
 </script>
 
 <style scoped>

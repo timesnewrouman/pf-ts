@@ -1,7 +1,7 @@
 import {defineStore} from 'pinia';
 import axios from "axios";
 import {ref} from "vue";
-import InitialTable from "@components/interface/InitialTable";
+import InitialTable from "@/components/interface/InitialTable";
 
 export const useTablesStore = defineStore('tables', () => {
   const acTable = ref<InitialTable | {}>({});

@@ -4,15 +4,13 @@ import vuetify from 'vite-plugin-vuetify';
 import svgLoader from 'vite-svg-loader';
 import path from 'path';
 
-
 export default defineConfig({
-  server: {},
-  base: '/pf-ts/',
+  // server: {},
+  base: '/pf-ts/', // '' для dev
   resolve: {
+    extensions: ['.js', '.ts', '.vue', '.json', '.sass'],
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@assets': path.resolve(__dirname, './src/assets'),
-      '@components': path.resolve(__dirname, './src/components'),
     },
   },
   plugins: [
