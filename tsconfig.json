@@ -18,7 +18,7 @@
     "jsx": "preserve",
     /* Linting */
     "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
