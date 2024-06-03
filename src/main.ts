@@ -2,7 +2,7 @@ import {createApp} from 'vue';
 import {createPinia} from 'pinia';
 import {createVuetify} from 'vuetify';
 import 'vuetify/styles';
-import {VBtn, VDialog, VCard, VToolbar, VAutocomplete, VTextField, VFileInput} from 'vuetify/components';
+import {VBtn, VDialog, VAutocomplete, VTextField, VFileInput} from 'vuetify/components';
 import App from '@/App.vue';
 import router from './router/router';
 import '@/assets/styles/index.scss';
