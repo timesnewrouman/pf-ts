@@ -7,7 +7,7 @@
 		variant="outlined"
 	></v-autocomplete>
 	<v-data-table
-		:headers="headers"
+		:headers="tableHeaders"
 		:items="tableData"
 		density="comfortable"
 		item-key="name"
@@ -44,25 +44,14 @@
 <script setup lang="ts">
 import {computed, ref, Ref} from "vue";
 import {useTablesStore} from '@/store/tables.ts';
-import Header from "@/components/interface/TableForGM";
-import InitialTable from "@/components/interface/InitialTable";
-
-const levels: Ref<number[]> = ref([-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]);
-
-const headers: Ref<Header[]> = ref([
-	{title: 'type', key: 'type', sortable: false},
-	{title: 'extreme', key: 'extreme', sortable: false},
-	{title: 'high', key: 'high', sortable: false},
-	{title: 'moderate', key: 'moderate', sortable: false},
-	{title: 'low', key: 'low', sortable: false},
-	{title: 'terrible', key: 'terrible', sortable: false},
-]);
+import {MappedTableData, InitialTable} from "@/components/interface/InitialTable";
+import {levels, tableHeaders} from "@components/const/const";
 
 const tablesStore = useTablesStore();
 
 const currentLevel: Ref<number> = ref(1);
 
-const tableData = computed(() => {
+const tableData = computed<MappedTableData[]>(() => {
 	const tables: InitialTable[] = [
 		tablesStore.acTable,
 		tablesStore.savingThrowsTable,
@@ -76,8 +65,8 @@ const tableData = computed(() => {
 	];
 
 	return tables.map((table) => {
-		const el = table?.data?.find(el => el.level === currentLevel.value);
-		return {...el, type: table?.type};
+		const el = table?.data?.find(el => el.level === currentLevel.value) || {};
+		return {...el, type: table?.type} as MappedTableData;
 	});
 });
 
