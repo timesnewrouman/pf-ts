@@ -5,8 +5,12 @@ import svgLoader from 'vite-svg-loader';
 import path from 'path';
 
 export default defineConfig({
-  // server: {},
-  base: '/pf-ts/', // '' для dev
+  server: {
+    port: 5173,
+    open: true
+  },
+  // base: '', // для dev
+  base: '/pf-ts/', // для production
   resolve: {
     extensions: ['.js', '.ts', '.vue', '.json', '.sass'],
     alias: {
