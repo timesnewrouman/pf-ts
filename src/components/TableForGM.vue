@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-// import { useTablesStore } from "@/store/tables.ts";
-import { levels, tableHeaders, aoeHeaders } from "@/composables/const";
+import { levels, tableHeaders, aoeHeaders, resWeakHeaders } from "@/composables/const";
+import { skillsTable } from "@/composables/tables/skillsTable";
 import { acTable } from "@/composables/tables/acTable";
 import { savingThrowsTable } from "@/composables/tables/savingThrowsTable";
 import { perceptionTable } from "@/composables/tables/perceptionTable";
@@ -11,11 +11,13 @@ import { damageTable } from "@/composables/tables/damageTable";
 import { spellDcTable } from "@/composables/tables/spellDcTable";
 import { spellAttackTable } from "@/composables/tables/spellAttackTable";
 import { aoeTable } from "@/composables/tables/aoeTable";
+import { resWeakTable } from "@/composables/tables/res&weakTable";
 
 const currentLevel = ref(1);
 
 const tableData = computed(() => {
   const tables = [
+    { data: skillsTable, type: "skill" },
     { data: acTable, type: "ac" },
     { data: savingThrowsTable, type: "saving-throws" },
     { data: perceptionTable, type: "perception" },
@@ -34,6 +36,15 @@ const tableData = computed(() => {
 
 const aoeData = computed(() => {
   const tables = [{ data: aoeTable, type: "aoe" }];
+
+  return tables.map((table) => {
+    const el = table.data?.find((el) => el.level === currentLevel.value) || {};
+    return { ...el, type: table.type };
+  });
+});
+
+const resWeakData = computed(() => {
+  const tables = [{ data: resWeakTable, type: "resWeak" }];
 
   return tables.map((table) => {
     const el = table.data?.find((el) => el.level === currentLevel.value) || {};
@@ -93,7 +104,7 @@ const aoeData = computed(() => {
         {{ value ? value : "" }}
       </span>
     </template>
-    <template #item.terrible="{ value }">
+    <!-- <template #item.terrible="{ value }">
       <span
         :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
           value ? '#ff0000' : '0'
@@ -101,35 +112,56 @@ const aoeData = computed(() => {
       >
         {{ value ? value : "" }}
       </span>
-    </template>
+    </template> -->
   </v-data-table>
-  <v-data-table
-    :headers="aoeHeaders"
-    :items="aoeData"
-    density="comfortable"
-    item-key="name"
-    style="margin-top: 10px"
-  >
-    <template #bottom></template>
-    <template #item.unlimited="{ value }">
-      <span
-        :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
-          value ? '#3cff00' : '0'
-        }; background`"
-      >
-        {{ value ? value : "" }}
-      </span>
-    </template>
-    <template #item.limited="{ value }">
-      <span
-        :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
-          value ? '#ff8000' : '0'
-        }; background`"
-      >
-        {{ value ? value : "" }}
-      </span>
-    </template>
-  </v-data-table>
+  <div class="d-flex">
+    <v-data-table
+      :headers="aoeHeaders"
+      :items="aoeData"
+      density="comfortable"
+      item-key="name"
+      style="margin-top: 10px"
+      class="mr-2"
+    >
+      <template #bottom></template>
+      <template #item.unlimited="{ value }">
+        <span
+          :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
+            value ? '#3cff00' : '0'
+          }; background`"
+        >
+          {{ value ? value : "" }}
+        </span>
+      </template>
+      <template #item.limited="{ value }">
+        <span
+          :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
+            value ? '#ff8000' : '0'
+          }; background`"
+        >
+          {{ value ? value : "" }}
+        </span>
+      </template>
+    </v-data-table>
+    <v-data-table
+      :headers="resWeakHeaders"
+      :items="resWeakData"
+      density="comfortable"
+      item-key="name"
+      style="margin-top: 10px"
+    >
+      <template #bottom></template>
+      <template #item.number="{ value }">
+        <span
+          :style="`padding: ${value ? '5px 10px' : '0'}; background: ${
+            value ? '#ff8000' : '0'
+          }; background`"
+        >
+          {{ value ? value : "" }}
+        </span>
+      </template>
+    </v-data-table>
+  </div>
 </template>
 
 <style lang="scss" scoped>

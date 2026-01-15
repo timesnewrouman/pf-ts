@@ -5,7 +5,6 @@ export const savingThrowsTable = [
         "high": 8,
         "moderate": 5,
         "low": 2,
-        "terrible": 0
     },
     {
         "level": 0,
@@ -13,7 +12,6 @@ export const savingThrowsTable = [
         "high": 9,
         "moderate": 6,
         "low": 3,
-        "terrible": 1
     },
     {
         "level": 1,
@@ -21,7 +19,6 @@ export const savingThrowsTable = [
         "high": 10,
         "moderate": 7,
         "low": 4,
-        "terrible": 2
     },
     {
         "level": 2,
@@ -29,7 +26,6 @@ export const savingThrowsTable = [
         "high": 11,
         "moderate": 8,
         "low": 5,
-        "terrible": 3
     },
     {
         "level": 3,
@@ -37,7 +33,6 @@ export const savingThrowsTable = [
         "high": 12,
         "moderate": 9,
         "low": 6,
-        "terrible": 4
     },
     {
         "level": 4,
@@ -45,7 +40,6 @@ export const savingThrowsTable = [
         "high": 14,
         "moderate": 11,
         "low": 8,
-        "terrible": 6
     },
     {
         "level": 5,
@@ -53,7 +47,6 @@ export const savingThrowsTable = [
         "high": 15,
         "moderate": 12,
         "low": 9,
-        "terrible": 7
     },
     {
         "level": 6,
@@ -61,7 +54,6 @@ export const savingThrowsTable = [
         "high": 17,
         "moderate": 14,
         "low": 11,
-        "terrible": 8
     },
     {
         "level": 7,
@@ -69,7 +61,6 @@ export const savingThrowsTable = [
         "high": 18,
         "moderate": 15,
         "low": 12,
-        "terrible": 10
     },
     {
         "level": 8,
@@ -77,7 +68,6 @@ export const savingThrowsTable = [
         "high": 19,
         "moderate": 16,
         "low": 13,
-        "terrible": 11
     },
     {
         "level": 9,
@@ -85,7 +75,6 @@ export const savingThrowsTable = [
         "high": 21,
         "moderate": 18,
         "low": 15,
-        "terrible": 12
     },
     {
         "level": 10,
@@ -93,7 +82,6 @@ export const savingThrowsTable = [
         "high": 22,
         "moderate": 19,
         "low": 16,
-        "terrible": 14
     },
     {
         "level": 11,
@@ -101,7 +89,6 @@ export const savingThrowsTable = [
         "high": 24,
         "moderate": 21,
         "low": 18,
-        "terrible": 15
     },
     {
         "level": 12,
@@ -109,7 +96,6 @@ export const savingThrowsTable = [
         "high": 25,
         "moderate": 22,
         "low": 19,
-        "terrible": 16
     },
     {
         "level": 13,
@@ -117,7 +103,6 @@ export const savingThrowsTable = [
         "high": 26,
         "moderate": 23,
         "low": 20,
-        "terrible": 18
     },
     {
         "level": 14,
@@ -125,7 +110,6 @@ export const savingThrowsTable = [
         "high": 28,
         "moderate": 25,
         "low": 22,
-        "terrible": 19
     },
     {
         "level": 15,
@@ -133,7 +117,6 @@ export const savingThrowsTable = [
         "high": 29,
         "moderate": 26,
         "low": 23,
-        "terrible": 20
     },
     {
         "level": 16,
@@ -141,7 +124,6 @@ export const savingThrowsTable = [
         "high": 30,
         "moderate": 28,
         "low": 25,
-        "terrible": 22
     },
     {
         "level": 17,
@@ -149,7 +131,6 @@ export const savingThrowsTable = [
         "high": 32,
         "moderate": 29,
         "low": 26,
-        "terrible": 23
     },
     {
         "level": 18,
@@ -157,7 +138,6 @@ export const savingThrowsTable = [
         "high": 33,
         "moderate": 30,
         "low": 27,
-        "terrible": 24
     },
     {
         "level": 19,
@@ -165,7 +145,6 @@ export const savingThrowsTable = [
         "high": 35,
         "moderate": 32,
         "low": 29,
-        "terrible": 26
     },
     {
         "level": 20,
@@ -173,7 +152,6 @@ export const savingThrowsTable = [
         "high": 36,
         "moderate": 33,
         "low": 30,
-        "terrible": 27
     },
     {
         "level": 21,
@@ -181,7 +159,6 @@ export const savingThrowsTable = [
         "high": 38,
         "moderate": 35,
         "low": 32,
-        "terrible": 28
     },
     {
         "level": 22,
@@ -189,7 +166,6 @@ export const savingThrowsTable = [
         "high": 39,
         "moderate": 36,
         "low": 33,
-        "terrible": 30
     },
     {
         "level": 23,
@@ -197,7 +173,6 @@ export const savingThrowsTable = [
         "high": 40,
         "moderate": 37,
         "low": 34,
-        "terrible": 31
     },
     {
         "level": 24,
@@ -205,6 +180,5 @@ export const savingThrowsTable = [
         "high": 42,
         "moderate": 38,
         "low": 36,
-        "terrible": 32
     }
 ]

@@ -61,72 +61,72 @@ export const aoeTable = [
     },
     {
         "level": 11,
-        "unlimited use": "6d6 (21)",
-        "limited use": "12d6 (42)"
+        "unlimited": "6d6 (21)",
+        "limited": "12d6 (42)"
     },
     {
         "level": 12,
-        "unlimited use": "5d8 (23)",
-        "limited use": "13d6 (46)"
+        "unlimited": "5d8 (23)",
+        "limited": "13d6 (46)"
     },
     {
         "level": 13,
-        "unlimited use": "7d6 (24)",
-        "limited use": "14d6 (49)"
+        "unlimited": "7d6 (24)",
+        "limited": "14d6 (49)"
     },
     {
         "level": 14,
-        "unlimited use": "4d12 (26)",
-        "limited use": "15d6 (53)"
+        "unlimited": "4d12 (26)",
+        "limited": "15d6 (53)"
     },
     {
         "level": 15,
-        "unlimited use": "6d8 (27)",
-        "limited use": "16d6 (56)"
+        "unlimited": "6d8 (27)",
+        "limited": "16d6 (56)"
     },
     {
         "level": 16,
-        "unlimited use": "8d6 (28)",
-        "limited use": "17d6 (60)"
+        "unlimited": "8d6 (28)",
+        "limited": "17d6 (60)"
     },
     {
         "level": 17,
-        "unlimited use": "8d6 (29)",
-        "limited use": "18d6 (63)"
+        "unlimited": "8d6 (29)",
+        "limited": "18d6 (63)"
     },
     {
         "level": 18,
-        "unlimited use": "9d6 (30)",
-        "limited use": "19d6 (67)"
+        "unlimited": "9d6 (30)",
+        "limited": "19d6 (67)"
     },
     {
         "level": 19,
-        "unlimited use": "7d8 (32)",
-        "limited use": "20d6 (70)"
+        "unlimited": "7d8 (32)",
+        "limited": "20d6 (70)"
     },
     {
         "level": 20,
-        "unlimited use": "6d10 (33)",
-        "limited use": "21d6 (74)"
+        "unlimited": "6d10 (33)",
+        "limited": "21d6 (74)"
     },
     {
         "level": 21,
-        "unlimited use": "10d6 (35)",
-        "limited use": "22d6 (77)"
+        "unlimited": "10d6 (35)",
+        "limited": "22d6 (77)"
     },
     {
         "level": 22,
-        "unlimited use": "8d8 (36)",
-        "limited use": "23d6 (81)"
+        "unlimited": "8d8 (36)",
+        "limited": "23d6 (81)"
     },
     {
         "level": 23,
-        "unlimited use": "11d6 (38)",
-        "limited use": "24d6 (84)"
+        "unlimited": "11d6 (38)",
+        "limited": "24d6 (84)"
     },
     {
         "level": 24,
-        "unlimited use": "11d6 (39)",
-        "limited use": "25d6 (88)"
+        "unlimited": "тоже 11d6 (39)",
+        "limited": "25d6 (88)"
     }
 ]

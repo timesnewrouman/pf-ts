@@ -3,3 +3,6 @@
 <template>
   <router-view />
 </template>
+
+// todo hazard
+// todo level-based

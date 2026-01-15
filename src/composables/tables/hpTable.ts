@@ -2,157 +2,157 @@ export const hpTable = [
     {
         "level": -1,
         "high": "9",
-        "moderate": "8-7",
-        "low": "6-5"
+        "moderate": "7",
+        "low": "5"
     },
     {
         "level": 0,
-        "high": "20-17",
-        "moderate": "16-14",
-        "low": "13-11"
+        "high": "18",
+        "moderate": "15",
+        "low": "12"
     },
     {
         "level": 1,
-        "high": "26-24",
-        "moderate": "21-19",
-        "low": "16-14"
+        "high": "25",
+        "moderate": "20",
+        "low": "15"
     },
     {
         "level": 2,
-        "high": "40-36",
-        "moderate": "32-28",
-        "low": "25-21"
+        "high": "38",
+        "moderate": "30",
+        "low": "23"
     },
     {
         "level": 3,
-        "high": "59-53",
-        "moderate": "48-42",
-        "low": "37-31"
+        "high": "56",
+        "moderate": "45",
+        "low": "34"
     },
     {
         "level": 4,
-        "high": "78-72",
-        "moderate": "63-57",
-        "low": "48-42"
+        "high": "75",
+        "moderate": "60",
+        "low": "45"
     },
     {
         "level": 5,
-        "high": "97-91",
-        "moderate": "78-72",
-        "low": "59-53"
+        "high": "94",
+        "moderate": "75",
+        "low": "56"
     },
     {
         "level": 6,
-        "high": "123-115",
-        "moderate": "99-91",
-        "low": "75-67"
+        "high": "119",
+        "moderate": "95",
+        "low": "71"
     },
     {
         "level": 7,
-        "high": "148-140",
-        "moderate": "119-111",
-        "low": "90-82"
+        "high": "144",
+        "moderate": "115",
+        "low": "86"
     },
     {
         "level": 8,
-        "high": "173-165",
-        "moderate": "139-131",
-        "low": "105-97"
+        "high": "169",
+        "moderate": "135",
+        "low": "101"
     },
     {
         "level": 9,
-        "high": "198-190",
-        "moderate": "159-151",
-        "low": "120-112"
+        "high": "194",
+        "moderate": "155",
+        "low": "116"
     },
     {
         "level": 10,
-        "high": "223-215",
-        "moderate": "179-171",
-        "low": "135-127"
+        "high": "219",
+        "moderate": "175",
+        "low": "131"
     },
     {
         "level": 11,
-        "high": "248-240",
-        "moderate": "199-191",
-        "low": "150-142"
+        "high": "244",
+        "moderate": "195",
+        "low": "146"
     },
     {
         "level": 12,
-        "high": "273-265",
-        "moderate": "219-211",
-        "low": "165-157"
+        "high": "269",
+        "moderate": "215",
+        "low": "161"
     },
     {
         "level": 13,
-        "high": "298-290",
-        "moderate": "239-231",
-        "low": "180-172"
+        "high": "294",
+        "moderate": "235",
+        "low": "176"
     },
     {
         "level": 14,
-        "high": "323-315",
+        "high": "319",
         "moderate": "259-251",
         "low": "195-187"
     },
     {
         "level": 15,
-        "high": "348-342",
-        "moderate": "279-271",
-        "low": "210-202"
+        "high": "345",
+        "moderate": "275",
+        "low": "206"
     },
     {
         "level": 16,
-        "high": "373-365",
-        "moderate": "299-291",
-        "low": "225-217"
+        "high": "369",
+        "moderate": "295",
+        "low": "221"
     },
     {
         "level": 17,
-        "high": "398-390",
-        "moderate": "319-311",
-        "low": "240-232"
+        "high": "394",
+        "moderate": "315",
+        "low": "236"
     },
     {
         "level": 18,
-        "high": "423-415",
-        "moderate": "339-331",
-        "low": "255-247"
+        "high": "419",
+        "moderate": "335",
+        "low": "251"
     },
     {
         "level": 19,
-        "high": "448-440",
-        "moderate": "359-351",
-        "low": "270-262"
+        "high": "444",
+        "moderate": "355",
+        "low": "266"
     },
     {
         "level": 20,
-        "high": "473-465",
-        "moderate": "379-371",
-        "low": "285-277"
+        "high": "469",
+        "moderate": "375",
+        "low": "281"
     },
     {
         "level": 21,
-        "high": "505-495",
-        "moderate": "405-395",
-        "low": "305-295"
+        "high": "500",
+        "moderate": "400",
+        "low": "300"
     },
     {
         "level": 22,
-        "high": "544-532",
-        "moderate": "436-424",
-        "low": "329-317"
+        "high": "538",
+        "moderate": "430",
+        "low": "323"
     },
     {
         "level": 23,
-        "high": "581-569",
-        "moderate": "466-454",
-        "low": "351-339"
+        "high": "575",
+        "moderate": "460",
+        "low": "345"
     },
     {
         "level": 24,
-        "high": "633-617",
-        "moderate": "508-492",
-        "low": "383-367"
+        "high": "625",
+        "moderate": "500",
+        "low": "375"
     }
 ]

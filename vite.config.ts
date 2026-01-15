@@ -6,8 +6,11 @@ import path from 'path';
 
 export default defineConfig({
   server: {
-    port: 5173,
-    open: true
+    host: '127.0.0.1', // ради доступа сквозь впн
+    hmr: {
+      host: '127.0.0.1',
+      protocol: 'ws'
+    }
   },
   // base: '', // для dev
   base: '/pf-ts/', // для production

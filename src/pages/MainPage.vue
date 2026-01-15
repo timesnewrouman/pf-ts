@@ -7,7 +7,7 @@ const tables = ref([{ id: 1 }]);
 function addTable() {
   const newId = Math.max(...tables.value.map((t) => t.id), 0) + 1;
   tables.value.push({ id: newId });
-}
+} 
 </script>
 
 <template>
@@ -15,7 +15,7 @@ function addTable() {
     <v-btn color="primary" class="zxc" @click="addTable"> + </v-btn>
     <div class="tables-wrapper">
       <div v-for="table in tables" :key="table.id" class="table-item">
-        <TableForGM />     
+        <TableForGM />
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@ function addTable() {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  max-width: 1308px;
+  max-width: 1320px;
 }
 
 .table-item {
