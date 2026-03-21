@@ -17,15 +17,15 @@ const currentLevel = ref(1);
 
 const tableData = computed(() => {
   const tables = [
-    { data: skillsTable, type: "skill" },
-    { data: acTable, type: "ac" },
-    { data: savingThrowsTable, type: "saving-throws" },
-    { data: perceptionTable, type: "perception" },
-    { data: hpTable, type: "hp" },
-    { data: attackTable, type: "attack" },
-    { data: damageTable, type: "damage" },
-    { data: spellDcTable, type: "spell-dc" },
-    { data: spellAttackTable, type: "spell-attack" },
+    { data: acTable, type: "КБ"},
+    { data: savingThrowsTable, type: "Спасброски" },
+    { data: hpTable, type: "ОЗ" },
+    { data: perceptionTable, type: "Восприятие" },
+    { data: attackTable, type: "Атака" },
+    { data: damageTable, type: "Урон" },
+    { data: spellDcTable, type: "КС заклинаний" },
+    { data: spellAttackTable, type: "Атака заклинаний" },
+    { data: skillsTable, type: "Навыки" },
   ];
 
   return tables.map((table) => {
@@ -35,7 +35,7 @@ const tableData = computed(() => {
 });
 
 const aoeData = computed(() => {
-  const tables = [{ data: aoeTable, type: "aoe" }];
+  const tables = [{ data: aoeTable, type: "АоЕ" }];
 
   return tables.map((table) => {
     const el = table.data?.find((el) => el.level === currentLevel.value) || {};
@@ -44,7 +44,7 @@ const aoeData = computed(() => {
 });
 
 const resWeakData = computed(() => {
-  const tables = [{ data: resWeakTable, type: "resWeak" }];
+  const tables = [{ data: resWeakTable, type: "Сопротивления" }];
 
   return tables.map((table) => {
     const el = table.data?.find((el) => el.level === currentLevel.value) || {};
